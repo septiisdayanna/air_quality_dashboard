@@ -3,24 +3,27 @@
 Dashboard ini merupakan aplikasi berbasis Streamlit untuk menganalisis kualitas udara di Stasiun Tiantan berdasarkan data polutan seperti PM2.5, PM10, SO2, NO2, CO, dan O3. Dashboard ini memungkinkan pengguna untuk memfilter data berdasarkan rentang waktu dan menampilkan visualisasi data polutan berdasarkan waktu, musim, dan arah angin.
 
 ## Setup Environment - Anaconda
-
+```
 conda create --name air-quality-dashboard python=3.12
 conda activate air-quality-dashboard
 pip install -r requirements.txt
+```
 
 
 ## Setup Environment - Shell/Terminal
-
+```
 mkdir air_quality_dashboard
 cd air_quality_dashboard
 pipenv install
 pipenv shell
 pip install -r requirements.txt
+```
 
 
 ## Jalankan Aplikasi Streamlit
-
+```
 streamlit run dashboard.py
+```
 
 
 ## Struktur Data
@@ -38,9 +41,10 @@ streamlit run dashboard.py
 
 ## Dependencies
 Pastikan dependencies berikut telah terinstal:
-
+```
 pandas
 matplotlib
 seaborn
 streamlit
+```
 babel
