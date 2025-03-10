@@ -46,5 +46,5 @@ pandas
 matplotlib
 seaborn
 streamlit
-```
 babel
+```
