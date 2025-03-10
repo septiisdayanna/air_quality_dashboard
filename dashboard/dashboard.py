@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
 from babel.numbers import format_currency
+import os
 
 sns.set(style='dark')
 
@@ -39,7 +40,8 @@ def highlight_max(data):
     return colors
 
 # Load berkas
-all_df = pd.read_csv("dashboard\main_data.csv")
+file_path = os.path.join("dashboard", "main_data.csv")
+all_df = pd.read_csv(file_path)
 
 # Membuat kolom datetime dari year, month, day, hour
 all_df["datetime"] = pd.to_datetime(all_df[['year', 'month', 'day']])
